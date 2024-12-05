@@ -1,0 +1,17 @@
+network:
+  nodes:
+    - node_id: "node_001"
+      host: "192.168.1.1"
+      port: 8080
+      status: "active"
+    - node_id: "node_002"
+      host: "192.168.1.2"
+      port: 8081
+      status: "inactive"
+  max_connections: 10
+  retry_interval_seconds: 30
+
+logging:
+  log_file: "kyrios.log"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  log_file_size: "10MB"
